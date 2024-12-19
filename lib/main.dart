@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue[900],
           title: Text(
             'Hello Flutter',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white,fontFamily: 'Poppins'),
           ),
         ),
         body: Container(
@@ -60,9 +60,12 @@ class MyApp extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20)),
                   child: Row(
                     children: [
-                      Image.asset(
-                        "assets/images/avatar.png",
-                        height: 100,
+                      CircleAvatar(
+                        radius: 30,
+                        child: Image.asset(
+                          "assets/images/avatar.png",
+                          height: 100,
+                        ),
                       ),
                       SizedBox(
                         width: 20,
