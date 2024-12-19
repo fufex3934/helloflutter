@@ -39,7 +39,10 @@ class MyApp extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Text("Image"),
+                  Image.asset(
+                    "assets/images/flutter_icon.png",
+                    height: 100,
+                  ),
                   SizedBox(
                     height: 20,
                   ),
@@ -57,7 +60,10 @@ class MyApp extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20)),
                   child: Row(
                     children: [
-                      Image.asset("assets/images/flutter_icon.png",height: 100,),
+                      Image.asset(
+                        "assets/images/avatar.png",
+                        height: 100,
+                      ),
                       SizedBox(
                         width: 20,
                       ),
