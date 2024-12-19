@@ -20,12 +20,21 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: Container(
-          padding: EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(20.0),
           margin: EdgeInsets.all(10),
           height: double.infinity,
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.blue[100],
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text("This is Text 1"),
+              Text("This is Text 1"),
+              Text("This is Text 1"),
+            ],
           ),
         ),
       ),
