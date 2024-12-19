@@ -14,7 +14,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Hello Flutter App'),
         ),
-        body: Text('Hello Flutter'),
+        body: Container(
+          padding: EdgeInsets.all(20.0),
+          height: 100,
+          width: 100,
+          color: Colors.indigo[600],
+          child: Text('Hello Flutter'),
+        ),
       ),
     );
   }
