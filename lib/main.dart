@@ -31,22 +31,60 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("Welcome to Hello Flutter App"),
+              Text(
+                "Welcome to Hello Flutter App",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Column(
                 children: [
                   Text("Image"),
-                  SizedBox(height: 20,),
-                  Text("This is app is developed by Fufi"),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    "This is app is developed by Fufi",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
               Container(
-                padding: EdgeInsets.all(10),
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(20)
-                ),
-                child: Text("Third Text"),),
+                  padding: EdgeInsets.all(10),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Image",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Fufi",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            "Flutter Developer",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          Text(
+                            "www.fufi.com",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
             ],
           ),
         ),
