@@ -39,7 +39,14 @@ class MyApp extends StatelessWidget {
                   Text("This is app is developed by Fufi"),
                 ],
               ),
-              Text("Third Text"),
+              Container(
+                padding: EdgeInsets.all(10),
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(20)
+                ),
+                child: Text("Third Text"),),
             ],
           ),
         ),
