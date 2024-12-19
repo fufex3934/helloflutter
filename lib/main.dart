@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import './child_three.dart';
+import './child_two.dart';
+import './child_one.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,73 +37,9 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                "Welcome to Hello Flutter App",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Column(
-                children: [
-                  Image.asset(
-                    "assets/images/flutter_icon.png",
-                    height: 100,
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    "This is app is developed by Fufi",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-              Container(
-                  padding: EdgeInsets.all(10),
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(20)),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        child: Image.asset(
-                          "assets/images/avatar.png",
-                          height: 100,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Fufi",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            "Flutter Developer",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                          Text(
-                            "www.fufi.com",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  )),
+              ChildOne(),
+             ChildTwo(),
+            ChildThree(),
             ],
           ),
         ),
