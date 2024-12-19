@@ -31,9 +31,15 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("This is Text 1"),
-              Text("This is Text 1"),
-              Text("This is Text 1"),
+              Text("Welcome to Hello Flutter App"),
+              Column(
+                children: [
+                  Text("Image"),
+                  SizedBox(height: 20,),
+                  Text("This is app is developed by Fufi"),
+                ],
+              ),
+              Text("Third Text"),
             ],
           ),
         ),
